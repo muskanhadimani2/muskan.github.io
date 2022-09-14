@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mydiv">
+        <h1>Currency Converter Appklication</h1>
+        <label>Enter Rs.</label>
+        <input type="text" id="rs"><br>
+        <label>Select Contry</label>
+        <select name="" id="sel">
+            <option value="null" >select contry</option>
+            <option value="doller">Us Doller</option>
+            <option value="riyal" >Riyat</option>
+        </select><br><br>
+        <button onclick="func()">Convert</button><br><br>
+        <p id="sr"> </p>
+    </div>
+    <script>
+      function func(){
+          var rs=document.getElementById('rs').value;
+        var selcurr = document.getElementById('sel').value;
+        if(selcurr=='doller'){
+            var res= parseFloat(rs)/79.66;
+            document.getElementById('sr').innerHTML=res;
+        }
+        else if(selcurr=='riyal'){
+            var res=parseFloat(rs)/20;
+             document.getElementById('sr').innerHTML=res;
+
+        }
+      }
+
+    </script>
+</body>
+</html>

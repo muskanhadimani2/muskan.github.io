@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .navst {
+    background-color: #e9c67b;
+    height: 50px;
+    border: 1px double black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  .homestyling {
+    border: 2px solid black;
+    margin-top: 10px;
+    min-height: 28px;
+    border-radius: 10px;
+  }
+  .footer{
+    width: 100%;
+    min-height: 120px;
+    background-color: black;
+    border-radius: 20px;
+  }
+  .footer >h1{
+    color: white;
+    text-align: center;
+  }
+  
+  
+  
